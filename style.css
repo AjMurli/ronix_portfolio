@@ -259,110 +259,54 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   width: 100%;
 }
 
-/* Cursor Section Start */
-/* .cursor{
-  z-index: 999;
-  position: fixed;
-  background: #4070f4;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: 0 0 20px #4070f4
-              0 0 60px #4070f4
-              0 0 100px #4070f4;
-  animation: colors 5s infinite;
-  transform: translate(-50%,-50%);
-  display: none;
-}
-
-@keyframes colors {
-  0%{
-    filter: hue-rotate(0deg);
-  }
-  100%{
-    filter: hue-rotate(360deg);
-  }
-  
-}
-
-.cursor::before{
-  content: '';
-  position: absolute;
-  background: #4070f4;
-  width: 50px;
-  height: 50px;
-  opacity: 0.2;
-  transform: translate(-30%, -30%);
-  border-radius: 50%;
-} */
-
-/* Cursor Section End */
-
-
-
-/* Media Queries Section Start */
-@media only screen and (max-width: 600px) {
-  .desktop-nav-bar {
-    display: none;
-  }
-  .desktop-section{
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1000px) {
-  .desktop-nav-bar {
-    display: none;
-  }
-  .desktop-section{
-    display: none;
-  }
-  
-}
-
-@media only screen and (min-width: 1000px) {
-  nav {
-    display: none;
-  }
-
-  .desktop-nav-bar{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  #footer .footerSection{
     display: flex;
-    justify-content:space-between;
-    padding: 20px 70px 20px 70px;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 0;
+    background: radial-gradient(at top left, #020c27, #0234bf);
   }
-  .desktop-nav-bar p{
-    font-weight: bolder;
+  #footer .footerBlock{
+    background: radial-gradient(at top left, #020c27, #0234bf);
   }
 
-  .desktop-nav-bar ul {
-    list-style: none;
+  #footer h5{
+    align-items: center;
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    color: white;
+    height: 40px;
   }
-  .desktop-nav-bar ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-  }
-  .desktop-nav-bar ul li a:hover{
-    color: blue;
-    border-bottom: 2px solid blue;  
-  }
+  #footer .footerSection h3{
+    color: white;
+    font-size: 25px;
+  } 
 
-  /*  */
+  #footer .footerSection, .myContactSection p{
+    color: white;
+  } 
 
+  #footer .myContactSection .phone{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  #footer .myContactSection .email{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
   #particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
     background: #e3f2fd;
+    /* position: fixed ; */
   }
   
   .desktop-section .my-profile-section {
@@ -375,8 +319,6 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
     align-items: start;
     width: 100%; 
   }
-  
-  
   .desktop-section .profile-content h1 {
     font-size: 50px;
     color: #081e5a;
@@ -406,7 +348,10 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
     transition: all 0.4s ease;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2 );
   }
-
+  .custom-btn a{
+    text-decoration: none;
+  }
+  
   .btn-7 {
     background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
       line-height: 42px;
@@ -536,199 +481,514 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
           left: 0%;
       }
     }
- 
-  .desktop-section #about {
-    top: 750px;
-    position: relative;
+  
+    .desktop-section #about {
+      top: 750px;
+      position: relative;
+      }
+      .desktop-section #about h2{
+        text-align: center;
+        font-size: 50px;
+        color: #081e5a;
+        font-weight: bolder;
+      }
+      .desktop-section #about span{
+        color:#ff4d00;
+      }
+    
+    .desktop-section .my-details h3{
+      color: #081e5a;
+      margin-bottom: 10px;
     }
-    .desktop-section #about h2{
-      text-align: center;
-      font-size: 50px;
+    .desktop-section .about-me {
+      padding-left: 100px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .desktop-section img{
+      border-radius: 5px;
+    }
+    .content-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    #about .about-me img {
+      max-width: 300px; 
+      margin-right: 20px; 
+    }
+  
+    .desktop-section .about-me .my-details a{
+      text-decoration: none;
+      font-size: 30px;
       color: #081e5a;
       font-weight: bolder;
     }
-    .desktop-section #about span{
+  
+    .desktop-section #about .my-details span{
+      text-align: center;
+      font-size: 15px;
+      color: #081e5a;
+      font-weight: bolder;
+    }
+    .desktop-section #about .my-details .email{
+      color:#ff4d00;
+    }
+    .desktop-section #about .my-details .place{
       color:#ff4d00;
     }
   
-  .desktop-section .my-details h3{
-    color: #081e5a;
-    margin-bottom: 10px;
+    .desktop-section #about .my-details p{
+      width: 68%;
+      font-size: 15px;
+      color: #081e5a;
+      font-weight: bolder;
+      margin-bottom: 10px;
+    }
+    .btn-14 {
+      margin-top: 25px;
+      background: #081e5a;
+      border: none;
+      z-index: 1;
+    }
+    .btn-14:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 5px;
+      background-color: #ff4d00;
+      background-image: linear-gradient(315deg, #ff4d00 0%, #ff4d00 74%);
+       box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5)
+       7px 7px 20px 0px rgba(0,0,0,.1),
+       4px 4px 5px 0px rgba(0,0,0,.1);
+      transition: all 0.3s ease;
+    }
+    .btn-14:hover {
+      color: #000;
+    }
+    .btn-14:hover:after {
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+    .btn-14:active {
+      top: 2px;
+    }
+      
+    .desktop-section #skills {
+      /* height: 300px; */
+      background: radial-gradient(at top left, #020c27, #0234bf);
+    }
+    .desktop-section #skills h2{
+      margin-top: 70px;
+      text-align: center;
+      font-size: 50px;
+      color:white;
+      font-weight: bolder;
+    }
+    .desktop-section #skills span{
+      color:#ff4d00;
+    }
+    .desktop-section #skills .center-skills{
+      display: flex;
+      justify-content: center;
+      gap:1rem;
+      margin-top: 20px;
+     
+    }
+    .desktop-section #skills .skill-container{
+      margin: 0 10px;
+      /* width: 15rem; */
+      height: 78px;
+      background: #020c27;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      gap: 1rem;
+    }
+    .desktop-section #skills .skill-container img{
+      width: 60px;
+    }
+    .desktop-section #skills .skill-container p{
+      color: white;
+    }
+    .spacer{
+      height: 20px;
+    }
+
+    .desktop-section #education{
+      margin-top: 30px;
+    }
+    .desktop-section #education p{
+      text-align: center;
+    }
+    .desktop-section #education .education-section{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 20px;
+    }
+  
+    .desktop-section #education .education-section .box{
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      padding: 15px 50px;
+      border-radius: 5px ;
+    }
+  
+    .desktop-section #education .education-section img{
+      margin-right: 20px;
+      height: 100px;
+    }
+    .desktop-section #education .education-section .edu-descption{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+    }
+    .desktop-section #education .education-section .edu-descption .collage-name {
+      color: #081e5a;
+      font-size: 20px;
+      font-weight: bolder;
+      margin-bottom: 5px;
+    }
+    .desktop-section #education .education-section .edu-descption .year {
+      color: green;
+      font-size: 17px;
+      font-weight: bolder;
+      margin-top: 5px;
+    }
+    .desktop-section #projects{
+      margin-top: 30px;
+    }
+    .space{
+      height: 100px;
+    }
+  
+    .desktop-section #projects .projectSection{
+      margin: 0 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: center;
+      gap: 10px;
+    }  
+    .desktop-section #projects .projectCard{
+      cursor: pointer;
+      flex: 1;
+      min-width: calc(33.33% - 20px); 
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 10px 20px;
+      background: radial-gradient(at top left, #020c27, #0234bf);
+    }
+    .desktop-section #projects .projectCard:hover{
+      scale: 1.09;
+      transition: all 0.9s ease;
+    }
+    .desktop-section #projects .projectCard {
+      text-decoration: none;
+    }
+    .desktop-section #projects .projectCard h3{
+      font-size: 30px;
+      color: white;
+      margin: 10px 0;
+    }
+    .desktop-section #projects .projectCard p{
+      color: white;
+      font-size: 15px;
+    }
+    .desktop-section #projects .projectSection .projectCard img{
+      width: 100px;
+    }
+    .desktop-section #achievement {
+      margin-top: 30px;
+    }
+    .desktop-section #achievement .achievementSection {
+      margin: 0 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 100px;
+    }
+    .desktop-section #achievement .achievementBlock {
+      display: flex;
+      flex-direction: row;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      flex: 1;
+      min-width: calc(50% - 20px); 
+    }
+    .desktop-section #achievement .achievementBlock img {
+      width: 50px;
+      margin-right: 10px;
+    } 
+  
+/* Media Queries Section Start */
+
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+  .desktop-nav-bar {
+    display: none;
   }
+  #me{
+    display: none;
+  }
+   
   .desktop-section .about-me {
-    padding-left: 17rem;
-    margin-top: 30px;
-    display: flex;
-    gap: 8rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .desktop-section .my-pic img{
-    width: 300px;
-    height: 400px;
-    border-radius: 5px;
-  }
-
-  .desktop-section .about-me .my-details a{
-    text-decoration: none;
-    font-size: 30px;
-    color: #081e5a;
-    font-weight: bolder;
-  }
-
-  .desktop-section #about .my-details span{
-    text-align: center;
-    font-size: 15px;
-    color: #081e5a;
-    font-weight: bolder;
-  }
-  .desktop-section #about .my-details .email{
-    color:#ff4d00;
-  }
-  .desktop-section #about .my-details .place{
-    color:#ff4d00;
-  }
-
-  .desktop-section #about .my-details p{
-    width: 68%;
-    font-size: 15px;
-    color: #081e5a;
-    font-weight: bolder;
-    margin-bottom: 10px;
-  }
-  .btn-14 {
-    margin-top: 25px;
-    background: #081e5a;
-    border: none;
-    z-index: 1;
-  }
-  .btn-14:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 5px;
-    background-color: #ff4d00;
-    background-image: linear-gradient(315deg, #ff4d00 0%, #ff4d00 74%);
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5)
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    transition: all 0.3s ease;
-  }
-  .btn-14:hover {
-    color: #000;
-  }
-  .btn-14:hover:after {
-    top: auto;
-    bottom: 0;
-    height: 100%;
-  }
-  .btn-14:active {
-    top: 2px;
-  }
-    
-  /* Skills Section Start */
-  .desktop-section #skills {
-    height: 300px;
-    background: radial-gradient(at top left, #020c27, #0234bf);
-  }
-  .desktop-section #skills h2{
-    margin-top: 70px;
-    text-align: center;
-    font-size: 50px;
-    color:white;
-    font-weight: bolder;
-  }
-  .desktop-section #skills span{
-    color:#ff4d00;
-  }
-  .desktop-section #skills .center-skills{
+  .desktop-section .my-details{
     display: flex;
     justify-content: center;
-    gap:1rem;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
   }
-  .desktop-section #skills .skill-container{
-    width: 15rem;
-    height: 78px;
-    background: #020c27;
-    border-radius: 8px;
+  .desktop-section #skills .center-skills{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .desktop-section #education .education-section{
+    flex-direction: column;
+  }
+  .desktop-section #projects .projectSection{
+    flex-direction: column;
+  }  
+  .desktop-section #projects .projectCard:hover{
+    scale: 1.0;
+    transition: all 0.9s ease;
+  }
+  .desktop-section #achievement .achievementSection {
+    flex-direction: column;
+    }
+    .desktop-section #achievement .achievementBlock {
+      align-items: center;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 750px) {
+  .desktop-nav-bar {
+    display: none;
+  }
+
+  
+  .desktop-section .my-profile-section {
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
   }
-  .desktop-section #skills .skill-container img{
-    width: 60px;
+  .profile-img{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .desktop-section #skills .skill-container p{
-    color: white;
+  #particles-js{
+    display: none;
   }
-
-  /* Skills Section End */
-
-  /* Education Section Start */
-  .desktop-section #education{
-    margin-top: 30px;
-    
+  .desktop-section .about-me {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    align-items: center;
+    margin-top: 0px;
   }
-  .desktop-section #education p{
-    text-align: center;
+  .desktop-section .my-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .desktop-section #skills .center-skills{
+    justify-content: center;
+    flex-direction: column;
   }
   .desktop-section #education .education-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    /* margin: auto; */
+    flex-direction: column;
+  }
+  .desktop-section #projects .projectSection{
+    flex-direction: column;
+  }  
+  .desktop-section #projects .projectCard:hover{
+    scale: 1.0;
+    transition: all 0.9s ease;
+  }
+  .desktop-section #achievement .achievementSection {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .desktop-section #achievement .achievementSection {
+    margin: 0px 10px;
+  }
+  #footer .footerSection{
+    margin: 0px 10px;
+    flex-direction: column;
+  }
+  #footer .myContactSection{
     margin-top: 20px;
   }
-
   .desktop-section #education .education-section .box{
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    padding: 15px 50px;
-    /* border-left: 5px solid #ff4d00; */
-    border-radius: 5px ;
-  }
-
-  .desktop-section #education .education-section img{
-    margin-right: 20px;
-    height: 100px;
-  }
-  .desktop-section #education .education-section .edu-descption{
-    display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    align-items: center;
   }
-  .desktop-section #education .education-section .edu-descption .collage-name {
-    color: #081e5a;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom: 5px;
+  .desktop-section #education .education-section .box img{
+    width: 100px;
   }
-  .desktop-section #education .education-section .edu-descption .year {
-    color: green;
-    font-size: 17px;
-    font-weight: bolder;
-    margin-top: 5px;
+  .desktop-section #education .education-section .box .edu-descption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  /* Education Section End */
-  /* Projects Section Start */
-  .desktop-section #projects{
-    margin-top: 30px;
-
+   
+  #about .about-me img {
+    width: 100%; 
+    margin-right: 0px; 
   }
-  /* Projects Section End */
+#home{
+  display: none;
+}
+.desktop-section #about {
+  position: static;
+}
+.description{
+  text-align: center;
+}
+.my-profile{
+  margin-top: 20px;
+  text-align: center;
+}
 
+.my-profile img{
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+}
+.profile-content{
+  margin-left: 10px;
+}
 
-  .space{
-    height: 100px;
+  .my-profile-section{
+    margin: 0px 0px 0px 10px;
   }
   
+.desktop-section .profile-content .name {
+  font-size: 1.23rem;
+}
+.desktop-section .profile-content .surname {
+  font-size: 1.23rem;
+}
+.desktop-section .profile-content h1 {
+  font-size: 1.23rem;
+}
+
+.desktop-section .text{
+  font-size: 1.23rem;
+  color: #ff4d00;
+  font-weight: bolder;
+}
+.pp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#achievement h2{
+  font-size: 1.8rem;
+}
+#achievement .achievementTag{
+  font-size: 1.8rem;
+}
+
+#achievement .achievementTag{
+  font-size: 1.8rem;
+}
+
+#projects .achievementTag{
+  font-size: 1.8rem;
+}
+#projects h2{
+  font-size: 1rem;
+}
+
+#education .achievementTag{
+  font-size: 1.8rem;
+}
+#education h2{
+  font-size: 1rem;
+}
+
+#skills .achievementTag{
+  font-size: 1.8rem;
+}
+#skills h2{
+  font-size: 1.8rem;
+}
+
+#about .achievementTag{
+  font-size: 1.8rem;
+}
+
+#about h2{
+  font-size: 1.8rem;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+
+  #me{
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .desktop-nav-bar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content:space-between;
+    padding: 20px 70px 20px 70px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .desktop-nav-bar p{
+    font-weight: bolder;
+  }
+
+  .desktop-nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  .desktop-nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+  .desktop-nav-bar ul li a:hover{
+    color: blue;
+    border-bottom: 2px solid blue;  
+  }
+
 }
 
 
